@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     //preencher o cep no lblResposta do layout
                     CEP retorno = new HttpService(txtCep.getText().toString().trim()).execute().get();
-                    lblResposta.setText(retorno.toString());
+                   lblResposta.setText(retorno.toString());
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 } catch (InterruptedException e) {
